@@ -268,6 +268,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 	persist.sys.usb.config=mtp
 
+PRODUCT_COPY_FILES := \
+	device/lge/mako/kernel:kernel
+
 # Other apps
 PRODUCT_PACKAGES += \
     OmniTorch
