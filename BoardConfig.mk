@@ -156,3 +156,5 @@ MR_DPI := hdpi
 MR_FSTAB := device/lge/mako/twrp.fstab
 MR_KEXEC_MEM_MIN := 0x85000000
 MR_INFOS := device/lge/mako/mrom_infos
+
+BUILD_OLD_SYS_PROPS := true
