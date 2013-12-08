@@ -1,9 +1,5 @@
 [
   {
-    "repository": "android_kernel_lge_mako",
-    "target_path": "kernel/lge/mako"
-  },
-  {
     "repository": "android_hardware_qcom_audio",
     "target_path": "hardware/qcom/audio",
     "remote": "omnirom"
