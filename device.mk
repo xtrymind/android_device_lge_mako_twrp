@@ -269,7 +269,8 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 	persist.sys.usb.config=mtp
 
 PRODUCT_COPY_FILES := \
-	device/lge/mako/kernel:kernel
+	device/lge/mako/kernel:kernel \
+	device/lge/mako/twrp.fstab:recovery/root/etc/twrp.fstab
 
 # Other apps
 PRODUCT_PACKAGES += \
