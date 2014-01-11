@@ -24,13 +24,10 @@ const char *mr_init_devices[] =
     "/sys/module/mmc_core",
     "/sys/module/mmcblk",
 
-    "/sys/class/input/input2",
-    "/sys/class/input/input2/event2",
-    "/sys/class/misc/uinput",
-    "/sys/class/input/input0",
-    "/sys/class/input/input0/event0",
-    "/sys/class/input/input1",
-    "/sys/class/input/input1/event1",
+    "/sys/devices/virtual/input*",
+    "/sys/devices/virtual/misc/uinput",
+    "/sys/devices/platform/msm_ssbi.0/pm8921-core/pm8xxx-keypad/input*",
+    "/sys/devices/platform/msm_ssbi.0/pm8921-core/pm8xxx-pwrkey/input*",
 
     // for adb
     "/sys/class/tty/ptmx",
@@ -46,9 +43,6 @@ const char *mr_init_devices[] =
 
     // USB Drive is in here
     "/sys/devices/platform/msm_hsusb_host*",
-
-    // exfat requires fuse device
-    "/sys/devices/virtual/misc/fuse",
 
     NULL
 };
