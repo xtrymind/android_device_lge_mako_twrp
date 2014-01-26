@@ -157,6 +157,8 @@ MR_DPI := hdpi
 MR_FSTAB := device/lge/mako/twrp.fstab
 MR_KEXEC_MEM_MIN := 0x85000000
 MR_INFOS := device/lge/mako/mrom_infos
+MR_DEVICE_RECOVERY_HOOKS := device/lge/mako/mr_hooks_recovery.c
+MR_DEVICE_RECOVERY_HOOKS_VER := 1
 
 BUILD_OLD_SYS_PROPS := true
 COMMON_GLOBAL_CFLAGS += -DBUILD_OLD_SYS_PROPS
