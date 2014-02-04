@@ -13,4 +13,4 @@
 /rpm	    emmc	/dev/block/platform/msm_sdcc.1/by-name/rpm
 /aboot	    emmc	/dev/block/platform/msm_sdcc.1/by-name/aboot
 /usb-otg    vfat        /dev/block/sda1    /dev/block/sda
-
+/persist	ext4	/dev/block/platform/msm_sdcc.1/by-name/persist
