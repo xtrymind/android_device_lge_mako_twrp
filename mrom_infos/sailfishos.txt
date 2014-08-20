@@ -36,5 +36,5 @@ initrd_path="%r/initrd.img"
 #  - %s - root directory, from root of the root device
 #  - %i - root image, from root of the root device
 #  - %f - fs of the root image
-base_cmdline="%b console=ttyHSL0,115200,n8 androidboot.hardware=mako lpj=67677"
+base_cmdline="%b console=ttyHSL0,115200,n8 androidboot.hardware=mako lpj=67677 selinux=0"
 dir_cmdline="data_subdir=%s/data"
