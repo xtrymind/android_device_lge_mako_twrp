@@ -61,6 +61,7 @@ PRODUCT_COPY_FILES += \
 	device/lge/mako/init.mako.usb.rc:root/init.mako.usb.rc \
 	device/lge/mako/fstab.mako:root/fstab.mako \
 	device/lge/mako/twrp.fstab:recovery/root/etc/twrp.fstab \
+	device/lge/mako/kernel:kernel \
 	device/lge/mako/ueventd.mako.rc:root/ueventd.mako.rc \
 	device/lge/mako/media_profiles.xml:system/etc/media_profiles.xml \
 	frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:system/etc/media_codecs_google_audio.xml \
@@ -270,6 +271,17 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 # Other apps
 PRODUCT_PACKAGES += \
     OmniTorch
+
+# TWRP lollipop decrypt proprietaries
+$(shell mkdir -p out/target/product/hammerhead/recovery/root/vendor/firmware/keymaster)
+
+PRODUCT_COPY_FILES += \
+	vendor/lge/mako/proprietary/keymaster.b00:recovery/root/vendor/firmware/keymaster/keymaster.b00 \
+	vendor/lge/mako/proprietary/keymaster.b01:recovery/root/vendor/firmware/keymaster/keymaster.b01 \
+	vendor/lge/mako/proprietary/keymaster.b02:recovery/root/vendor/firmware/keymaster/keymaster.b02 \
+	vendor/lge/mako/proprietary/keymaster.b03:recovery/root/vendor/firmware/keymaster/keymaster.b03 \
+	vendor/lge/mako/proprietary/keymaster.mdt:recovery/root/vendor/firmware/keymaster/keymaster.mdt \
+	vendor/qcom/mako/proprietary/libQSEEComAPI.so:recovery/root/sbin/libQSEEComAPI.so
 
 $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 $(call inherit-product, hardware/qcom/msm8960/msm8960.mk)
